@@ -1,0 +1,7 @@
+pyqrcodeng
+flask
+SQLAlchemy
+flask-login
+python-barcode
+requests
+opencv-python

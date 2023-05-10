@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+{% block content %}
+<div style="margin: auto; max-width:540px; margin-top: 20px;">
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="static/images/{{current_user.photoid|safe}}.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{current_user.name_surname}}</h5>
+                    <p class="card-text">{{current_user.group_facult}}<br>
+                        {{current_user.blank_id}}</p>
+                    <div style="text-align: center">
+                        {{barcode|safe}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
